@@ -4422,12 +4422,20 @@ $(document).ready(function () {//this is makes it so that that skill points beco
                 break;
             case "deck":
                 $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='deckmods' colspan=5></td><td class='linkcost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
+                var localmod = $("."+devicename+invNum+" .deckmods");
+                localmod.append("<tr class='agent'><td class='label'>Agent</td><td class='agentup button'>+</td><td class='agentrating'>0</td><td class='agentdown button'>-</td></tr>");
                 for (program in programs) {
-                    $("."+devicename+invNum+" .deckmods").append("<tr class='"+program+"'><td class='label'>"+programs[program]["name"]+"</td><td class='buyprogram button'><strong>+</strong></td></tr>");
+                    localmod.append("<tr class='"+program+"'><td class='label'>"+programs[program]["name"]+"</td><td class='buyprogram button' colspan=3><strong>+</strong></td></tr>");
                 }
                 break;
             case "rcc":
-                
+                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='rccmods' colspan=5></td><td class='linkcost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
+                var localmod = $("."+devicename+invNum+" .rccmods");
+                for (program in programs) {
+                    if (programs[program]["rcc"]==true) {
+                        localmod.append("<tr class='"+program+"'><td class='label'>"+programs[program]["name"]+"</td><td class='buyprogram button' colspan=3><strong>+</strong></td></tr>");
+                    }
+                }
                 break;
         }
         nuyen-=inventory[devicename+invNum]["cost"];
@@ -4449,6 +4457,7 @@ $(document).ready(function () {//this is makes it so that that skill points beco
         $("."+devicename).remove();
         nuyen+=inventory[devicename]["cost"];
         delete inventory[devicename];
+        nuyenUpdater();
     }
     
 </script>
