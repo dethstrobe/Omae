@@ -1797,35 +1797,35 @@ p, td {
     
     var electronics = {
         //commlinks
-        metalink: {model: "Meta Link", type: "commlink", device: 1, mods: {}, avail: 2, cost: 100},
-        sonyemperor: {model: "Sony Emperor", type:"commlink", device:2, mods: {}, avail: 4, cost: 700},
-        renrakusensei: {model: "Renraku Sensei", type: "commlink", device:3, mods: {}, avail: 6, cost:1000},
-        erikaelite: {model: "Erika Elite", type:"commlink", device:4, mods: {}, avail: 8, cost:2500},
-        hermesikon: {model:  "Hermes Ikon", type: "commlink", device:5, mods: {}, avail: 10, cost:3000},
-        transysavalon: {model: "Transys Avalon", type: "commlink", device:6, mods: {}, avail: 12, cost:5000},
-        fairlightcaliban: {model: "Fairlight Caliban", type: "commlink", device:7, mods: {}, avail: 14, cost: 8000}, 
+        metalink: {model: "Meta Link", type: "commlink", device: 1, avail: 2, cost: 100},
+        sonyemperor: {model: "Sony Emperor", type:"commlink", device:2, avail: 4, cost: 700},
+        renrakusensei: {model: "Renraku Sensei", type: "commlink", device:3, avail: 6, cost:1000},
+        erikaelite: {model: "Erika Elite", type:"commlink", device:4, avail: 8, cost:2500},
+        hermesikon: {model:  "Hermes Ikon", type: "commlink", device:5, avail: 10, cost:3000},
+        transysavalon: {model: "Transys Avalon", type: "commlink", device:6, avail: 12, cost:5000},
+        fairlightcaliban: {model: "Fairlight Caliban", type: "commlink", device:7, avail: 14, cost: 8000}, 
         //decks
-        erikamcd1: {model: "Erika MCD-1", type: "deck", device: 1, mods: {}, array: [4,3,2,1], programs:1, avail:3, restrict: "Restricted", cost: 49500},
-        Microdecksummit: {model: "Microdeck Summit", type: "deck", device: 1, mods: {}, array: [4,3,3,1], programs:1, avail: 3, restrict: "Restricted", cost: 58000},
-        Microtronicaazteca200: {model: "Microtronica Azteca 200", type: "deck", device: 2, mods: {}, array: [5,4,3,2], programs: 2, avail: 6, restrict: "Restricted", cost: 110250},
-        Hermeschariot: {model: "Hermes Chariot", type: "deck", device: 2, mods: {}, array: [5,4,4,2], programs: 2, avail: 6, restrict: "Restricted", cost: 123000},
-        Novtechnavigator: {model: "Novtech Navigator", type: "deck", device: 3, mods: {}, array: [6,5,4,3], programs: 3, avail: 6, restrict: "Restricted", cost: 205750},
-        Renrakutsurugi: {model: "Renraku Tsurugi", type: "deck", device: 3, mods: {}, array: [6,5,5,3], programs: 3, avail: 9, restrict: "Restricted", cost: 214125},
-        Sonyciy720: {model: "Sony CIY-720", type: "deck", device: 4, mods: {}, array: [7,6,5,4], programs: 4, avail: 12, restrict: "Restricted", cost: 345000},
-        Shiawase: {model: "Shiawase Cyber-5", type: "deck", device: 5, mods: {}, array: [8,7,6,5], programs: 5, avail: 15, restrict: "Restricted", cost: 549375},
-        Fairlightexcalibur: {model: "Fairlight Excalibur", type: "deck", device: 6, mods: {}, array: [9,8,7,6], programs: 6, avail: 18, restrict: "Restricted", cost: 823250},
+        erikamcd1: {model: "Erika MCD-1", type: "deck", device: 1, array: [4,3,2,1], programs:1, avail:3, restrict: "Restricted", cost: 49500},
+        Microdecksummit: {model: "Microdeck Summit", type: "deck", device: 1, array: [4,3,3,1], programs:1, avail: 3, restrict: "Restricted", cost: 58000},
+        Microtronicaazteca200: {model: "Microtronica Azteca 200", type: "deck", device: 2, array: [5,4,3,2], programs: 2, avail: 6, restrict: "Restricted", cost: 110250},
+        Hermeschariot: {model: "Hermes Chariot", type: "deck", device: 2, array: [5,4,4,2], programs: 2, avail: 6, restrict: "Restricted", cost: 123000},
+        Novtechnavigator: {model: "Novtech Navigator", type: "deck", device: 3, array: [6,5,4,3], programs: 3, avail: 6, restrict: "Restricted", cost: 205750},
+        Renrakutsurugi: {model: "Renraku Tsurugi", type: "deck", device: 3, array: [6,5,5,3], programs: 3, avail: 9, restrict: "Restricted", cost: 214125},
+        Sonyciy720: {model: "Sony CIY-720", type: "deck", device: 4, array: [7,6,5,4], programs: 4, avail: 12, restrict: "Restricted", cost: 345000},
+        Shiawase: {model: "Shiawase Cyber-5", type: "deck", device: 5, array: [8,7,6,5], programs: 5, avail: 15, restrict: "Restricted", cost: 549375},
+        Fairlightexcalibur: {model: "Fairlight Excalibur", type: "deck", device: 6, array: [9,8,7,6], programs: 6, avail: 18, restrict: "Restricted", cost: 823250},
          //RCC
-        scratchbuiltjunk: {model: "Scratch-Built Junk", type: "rcc", device: 1, mods: {}, dataprocess: 3, firewall: 2, avail: 2, restrict: "Restricted", cost: 1400},
-        Radioshackremotecontroller: {model: "Radio Shack Remote Controller", type: "rcc", device: 2, mods: {}, dataprocess: 3, firewall: 3, avail:6, restrict: "Restricted", cost: 8000},
-        Essymotorsdronemaster: {model: "Essy Motors DroneMaster", type: "rcc", device: 3, mods: {}, dataprocess: 4, firewall: 4, avail: 6, restrict: "Restricted", cost:16000},
+        scratchbuiltjunk: {model: "Scratch-Built Junk", type: "rcc", device: 1, dataprocess: 3, firewall: 2, avail: 2, restrict: "Restricted", cost: 1400},
+        Radioshackremotecontroller: {model: "Radio Shack Remote Controller", type: "rcc", device: 2, dataprocess: 3, firewall: 3, avail:6, restrict: "Restricted", cost: 8000},
+        Essymotorsdronemaster: {model: "Essy Motors DroneMaster", type: "rcc", device: 3, dataprocess: 4, firewall: 4, avail: 6, restrict: "Restricted", cost:16000},
         Compuforcetaskmaster: {model: "CompuForce TaskMaster", type: "rcc", device: 4, mods:{}, dataprocess: 5, firewall: 4, avail: 8, restrict: "Restricted", cost: 32000},
-        Maerskspider: {model:"Maersk Spider", type: "rcc", device: 4, mods: {}, dataprocess: 4, firewall: 5, avail: 8, restrict: "Restricted", cost: 34000},
-        Maserindustrialelectronics: {model: "Maser Industrial Electronics", type: "rcc", device: 5, mods: {}, dataprocess: 3, firewall: 4, avail: 8, restrict: "Restricted", cost: 64000},
-        Vulcanliegelord: {model: "Vulcan Liegelord", type: "rcc", device: 5, mods: {}, dataprocess: 5, firewall: 6, avail: 10, restrict: "Restricted", cost: 66000},
-        Proteusposeidon: {model: "Proteus Poseidon", type: "rcc", device: 5, mods: {}, dataprocess: 5, firewall: 6, avail: 12, restrict: "Restricted", cost: 68000},
-        Lonestarremotecommander:{model: "Lone Star Remote Commander", type: "rcc", device: 6, mods: {}, dataprocess: 6, firewall: 5, avail: 14, restrict: "Restricted", cost: 75000},
-        Mctdroneweb: {model: "MCT Drone Web", type: "rcc", device: 6, mods: {}, dataprocess: 7, firewall: 6, avail: 16, restrict: "Restricted", cost: 95000},
-        Trioxubermensch: {model: "Triox UberMensch", type: "rcc", device: 6, mods: {}, dataprocess: 8, firewall: 7, avail: 18, restrict: "Restricted", cost: 140000},
+        Maerskspider: {model:"Maersk Spider", type: "rcc", device: 4, dataprocess: 4, firewall: 5, avail: 8, restrict: "Restricted", cost: 34000},
+        Maserindustrialelectronics: {model: "Maser Industrial Electronics", type: "rcc", device: 5, dataprocess: 3, firewall: 4, avail: 8, restrict: "Restricted", cost: 64000},
+        Vulcanliegelord: {model: "Vulcan Liegelord", type: "rcc", device: 5, dataprocess: 5, firewall: 6, avail: 10, restrict: "Restricted", cost: 66000},
+        Proteusposeidon: {model: "Proteus Poseidon", type: "rcc", device: 5, dataprocess: 5, firewall: 6, avail: 12, restrict: "Restricted", cost: 68000},
+        Lonestarremotecommander:{model: "Lone Star Remote Commander", type: "rcc", device: 6, dataprocess: 6, firewall: 5, avail: 14, restrict: "Restricted", cost: 75000},
+        Mctdroneweb: {model: "MCT Drone Web", type: "rcc", device: 6, dataprocess: 7, firewall: 6, avail: 16, restrict: "Restricted", cost: 95000},
+        Trioxubermensch: {model: "Triox UberMensch", type: "rcc", device: 6, dataprocess: 8, firewall: 7, avail: 18, restrict: "Restricted", cost: 140000},
     }
     
     var software = {
@@ -1837,12 +1837,33 @@ p, td {
     
     var programs = {
         //common
-        browser: {name:"Browser", active: false, category: "common", rcc: false, test: "Matrix Search"},
+        browser: {name:"Browser", active: false, category: "common", rcc: true, test: "Matrix Search"},
         configurator: {name:"Configurator", active: false, catergoy: "common", rcc: false},
         edit: {name:"Edit", active: false, category: "common", rcc: false, test: "Edit", mod: 2},
         encryption: {name:"Encryption", active: false, category: "common", rcc: false, firewall: 1},
+        signalscrub: {name:"Signal Scrub", active: false, category: "common", rcc: true, noisereduction: 2},
+        toolbox: {name:"Toolbox", active: false, category: "common", rcc: true, dataprocessing: 1},
+        virtualmachine: {name:"Virtual Machine", active: false, category: "common", rcc: true, programs: 2, damagetaken: 1},
         //hacking
         armor: {name: "Armor", active: false, category: "hacking", rcc: true, test: "Resist Matrix Damage", mod: 2},
+        babymonitor: {name:"Baby Monitor", active: false, category: "hacking", rcc: false},
+        biofeedback: {name:"Biofeedback", active: false, category: "hacking", rcc: false},
+        biofeedbackfilter: {name:"Biofeedback Filter", active: false, category: "hacking", rcc: true, test: "Resist Biofeedback Damage", mod: 2},
+        blackout: {name:"Blackout", active: false, category: "hacking", rcc: false},
+        decryption: {name:"Decryption", active: false, category: "hacking", rcc: false, attack: 1},
+        defuse: {name:"Defuse", active: false, category: "hacking", rcc: false, test: "Resist Data Bomb Damage", mod: 4},
+        demolition: {name:"Demolition", active: false, category: "hacking", rcc: false, databombrating:1},
+        exploit: {name:"Exploit", active: false, category: "hacking", rcc: false, test: "Hack On The Fly", mod: 2},
+        fork: {name:"Fork", active: false, category: "hacking", rcc: false},
+        guard: {name:"Guard", active: false, category: "hacking", rcc: true},
+        hammer: {name:"Hammer", active: false, category: "hacking", rcc: false, matrixdamage: 2},
+        lockdown: {name:"Lockdown", active: false, category: "hacking", rcc: false},
+        mugger: {name:"Mugger", active: false, category: "hacking", rcc: false},
+        shell: {name:"Shell", active: false, category: "hacking", rcc: true, test: "Resist Matrix Damage, Resist Biofeedback Damage", mod: 1},
+        sneak:{name:"Sneak", active: false, category: "hacking", rcc: true, test: "Defend Trace User", mod: 2},
+        stealth:{name:"Stealth", active: false, category: "hacking", rcc: false, sleaze: 1},
+        track:{name:"Track", active: false, category: "hacking", rcc: false, test: "Trace User", mod: 2},
+        wrapper:{name:"Wrapper", active: false, category: "hacking", rcc: true}
     }
     
     inventory = {};
@@ -4410,27 +4431,27 @@ $(document).ready(function () {//this is makes it so that that skill points beco
     $("#devices").on("click", ".buydevice", appleStore);
     
     function appleStore () {
-        if ($(this).hasClass("deact")) {
+        var devicename=$(this).parent().attr("class");
+        if ($(this).hasClass("deact")||nuyen-electronics[devicename]["cost"]<0) {
             return;
         }
-        var devicename=$(this).parent().attr("class");
         toInventory (devicename);
         switch (electronics[devicename]["type"]) {
             case "commlink":
-                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='linkmods' colspan=3></td><td class='linkcost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
+                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='linkmods' colspan=3></td><td class='devicecost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
                 $("."+devicename+invNum+" .linkmods").append("<td class='label'>Sim Mod</td><td class='simmod button'>+</td><td class='label'>Hot Sim</td><td class='hotsim button'>+</td>");
                 break;
             case "deck":
-                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='deckmods' colspan=5></td><td class='linkcost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
-                var localmod = $("."+devicename+invNum+" .deckmods");
+                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='programs' colspan=5></td><td class='devicecost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
+                var localmod = $("."+devicename+invNum+" .programs");
                 localmod.append("<tr class='agent'><td class='label'>Agent</td><td class='agentup button'>+</td><td class='agentrating'>0</td><td class='agentdown button'>-</td></tr>");
                 for (program in programs) {
                     localmod.append("<tr class='"+program+"'><td class='label'>"+programs[program]["name"]+"</td><td class='buyprogram button' colspan=3><strong>+</strong></td></tr>");
                 }
                 break;
             case "rcc":
-                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='rccmods' colspan=5></td><td class='linkcost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
-                var localmod = $("."+devicename+invNum+" .rccmods");
+                $("."+devicename).after("<tr class='"+devicename+invNum+"'><td class='selldevice button'><em>-</em></td><td class='programs' colspan=5></td><td class='devicecost'>"+inventory[devicename+invNum]["cost"]+"&yen;</td></tr>");
+                var localmod = $("."+devicename+invNum+" .programs");
                 for (program in programs) {
                     if (programs[program]["rcc"]==true) {
                         localmod.append("<tr class='"+program+"'><td class='label'>"+programs[program]["name"]+"</td><td class='buyprogram button' colspan=3><strong>+</strong></td></tr>");
@@ -4447,6 +4468,7 @@ $(document).ready(function () {//this is makes it so that that skill points beco
             for (deviceAtt in electronics[x]) {
                 inventory[x+invNum][deviceAtt]=electronics[x][deviceAtt];
             }
+            inventory[x+invNum]["programlist"]={};
         }
     }
     
@@ -4457,6 +4479,125 @@ $(document).ready(function () {//this is makes it so that that skill points beco
         $("."+devicename).remove();
         nuyen+=inventory[devicename]["cost"];
         delete inventory[devicename];
+        nuyenUpdater();
+    }
+    
+    $("#devices").on("click", ".programs .button", buyProgram);
+    
+    function buyProgram() {
+        device=$(this).parent().parent().parent().attr("class");
+        program = $(this).parent().attr("class");
+        if (typeof programs[program]!=="undefined") {
+            cost=programcost(program);
+        }
+        if ($(this).hasClass("agentup")) {
+            if (typeof inventory[device]["programlist"]["agent"]==="undefined"&&nuyen-1000>0) {
+                inventory[device]["programlist"]["agent"]=1;
+                nuyen-=1000;
+                inventory[device]["cost"]+=1000;
+            } else if (inventory[device]["programlist"]["agent"]<4) {
+                if (inventory[device]["programlist"]["agent"]<3&&nuyen-1000>0) {
+                    nuyen-=1000;
+                    inventory[device]["cost"]+=1000;
+                } else if (inventory[device]["programlist"]["agent"]==3&&nuyen-5000>0) {
+                    nuyen-=5000;
+                    inventory[device]["cost"]+=5000;
+                } else if (inventory[device]["programlist"]["agent"]>=4&&nuyen-2000>0) {
+                    nuyen-=2000;
+                    inventory[device]["cost"]+=2000;
+                } else {
+                    inventory[device]["programlist"]["agent"]=0;
+                }
+                inventory[device]["programlist"]["agent"]++;
+                agentupdate(device);
+            }
+            $("."+device+" .agentrating").empty().append(inventory[device]["programlist"]["agent"])
+        } else if ($(this).hasClass("agentdown")) {
+            if (inventory[device]["programlist"]["agent"]>0) {
+                inventory[device]["programlist"]["agent"]--;
+                if (inventory[device]["programlist"]["agent"]<3) {
+                    nuyen+=1000;
+                    inventory[device]["cost"]-=1000;
+                } else if (inventory[device]["programlist"]["agent"]==3) {
+                    nuyen+=5000;
+                    inventory[device]["cost"]-=5000;
+                } else if (inventory[device]["programlist"]["agent"]>3) {
+                    nuyen+=2000;
+                    inventory[device]["cost"]-=2000;
+                }
+            }
+            agentupdate(device);
+        } else if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            delete inventory[device]["programlist"][program];
+            nuyen+=cost;
+            inventory[device]["cost"]-=cost;
+        } else if (nuyen-cost>0) {
+            $(this).addClass("active");
+            inventory[device]["programlist"][program]=programs[program];
+            nuyen-=cost;
+            inventory[device]["cost"]+=cost;
+        }
+        $("."+device+" .devicecost").empty().append(inventory[device]["cost"]+"&yen;");
+        nuyenUpdater();
+        
+        function programcost(x) {
+            cost=0;
+            if (programs[x]["category"]=="common") {
+                cost=80;
+            } else {
+                cost=250;
+            }
+            return (cost);
+        }
+        function agentupdate(x) {
+            $("."+x+" .agentrating").empty().append(inventory[x]["programlist"]["agent"])
+        }
+    }
+    
+    
+    $("#devices").on("click", ".linkmods .button", buylinkmod);
+    
+    function buylinkmod() {
+        device=$(this).parent().parent().attr("class");
+        if ($(this).hasClass("simmod")) {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                inventory[device]["programlist"]["simmod"]=false;
+                nuyen+=100;
+                inventory[device]["cost"]-=100;
+                if (inventory[device]["programlist"]["hotsim"]==true) {
+                    $("."+device+" .hotsim").removeClass("active");
+                    inventory[device]["programlist"]["hotsim"]=false;
+                    nuyen+=250;
+                    inventory[device]["cost"]-=250;
+                }
+            } else {
+                $(this).addClass("active");
+                inventory[device]["programlist"]["simmod"]=true;
+                nuyen-=100;
+                inventory[device]["cost"]+=100;
+            }
+        } else if ($(this).hasClass("hotsim")) {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                inventory[device]["programlist"]["hotsim"]=false;
+                nuyen+=250;
+                inventory[device]["cost"]-=250;
+            } else {
+                $(this).addClass("active");
+                inventory[device]["programlist"]["hotsim"]=true;
+                nuyen-=250;
+                inventory[device]["cost"]+=250;
+                if (inventory[device]["programlist"]["simmod"]==false||typeof inventory[device]["programlist"]["simmod"]==="undefined") {
+                    $("."+device+" .simmod").addClass("active");
+                    inventory[device]["programlist"]["simmod"]=true;
+                    nuyen-=100;
+                    inventory[device]["cost"]+=100;
+                }
+            }
+        }
+        $("."+device+" .devicecost").empty().append(inventory[device]["cost"]+"&yen;");
         nuyenUpdater();
     }
     
