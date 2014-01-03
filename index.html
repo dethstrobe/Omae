@@ -204,21 +204,11 @@ p, td {
                 <h2>Priority Table</h2>
                 <tr id="priority-label" class="label">
                     <td class="prilevel"> Priority </td>
-                    <td class="metatype ">
-                        Metatype
-                    </td>
-                    <td class="attribute">
-                        Attributes
-                    </td>
-                    <td class="magres ">
-                        Magic/Resonance
-                    </td>
-                    <td class="skillz ">
-                        Skills
-                    </td>
-                    <td class="resource ">
-                        Resource
-                    </td>
+                    <td class="metatype ">Metatype</td>
+                    <td class="attribute">Attributes</td>
+                    <td class="magres ">Magic/Resonance</td>
+                    <td class="skillz ">Skills</td>
+                    <td class="resource ">Resource</td>
                 </tr>
                 <tr id="priority-a">
                     <td class="prilevel a selected"> A </td>
@@ -229,16 +219,12 @@ p, td {
                         Ork (7)<br>
                         Troll (5)
                     </td>
-                    <td class="attribute a">
-                        24
-                    </td>
+                    <td class="attribute a">24</td>
                     <td class="magres a">
                         <strong>Magician or Mystic Adept:</strong> Magic 6, two Rating 5 Magic skills, 10 spells<br>
                         <strong>Technomancer:</strong> Resonance 6, two Rating 5 Resonance Skills, 5 complex forms
                     </td>
-                    <td class="skillz a">
-                        46/10
-                    </td>
+                    <td class="skillz a">46/10</td>
                     <td class="resource a">
                         450,000 &#65509
                     </td>
@@ -747,14 +733,12 @@ p, td {
                     <td>
                         <input type="text" class="knowledgeName" placeholder="Input Knowledge">
                     </td>
-                    <td id="academic" class="knowButton">Academic</td>
-                    <td id="interests" class="knowButton">Interests</td>
-                    <td id="professional" class="knowButton">Professional</td>
-                    <td id="street" class="knowButton">Street</td>
-                    <td id="language" class="knowButton">Language</td>
-                    <td id="addSkill" class="button">
-                        <strong>Add Knowledge</strong>
-                    </td>
+                    <td id="academic" class="knowButton" title="Logic">Academic</td>
+                    <td id="interests" class="knowButton" title="Intuition">Interests</td>
+                    <td id="professional" class="knowButton" title="Logic">Professional</td>
+                    <td id="street" class="knowButton" title="Intuition">Street</td>
+                    <td id="language" class="knowButton" title="Intuition">Language</td>
+                    <td id="addSkill" class="button"><strong>Add Knowledge</strong></td>
                 </tr>
                 <tr class="skilltitle">
                     <td><h3>Add Knowledge Skill</h3></td>
@@ -1196,6 +1180,20 @@ p, td {
                     <tr class="rccs label"><td>Buy</td><td>Model</td><td>Device Rating</td><td>Data Process</td><td>Firewall</td><td>Avail</td><td>Cost</td></tr>
                 </table>
             </div>
+            <div id="e-accessories">
+                <h2>Electonic Accessories</h2>
+                <table id="eccessories">
+                    <tr class="label"><td>Buy</td><td>Accessory</td><td>Device Rating</td><td>Avail</td><td>Cost</td></tr>
+                </table>
+                <h2>RFID Tags</h2>
+                <table id="rfid">
+                    <tr class="label"><td>Buy</td><td>Ammount</td><td>Sell</td><td>Tags</td><td>Device Rating</td><td>Avail</td><td>Cost</td></tr>
+                </table>
+                <h2>Communications</h2>
+                <table id="communications">
+                    <tr class="label"><td>Buy</td><td>raise</td><td>Rating</td><td>lower</td><td>Device</td><td>Avail</td><td>Cost</td></tr>
+                </table>
+            </div>
         </div>
     </div>
 <script>
@@ -1240,8 +1238,7 @@ p, td {
     var inimatcold = 3;//coldsim dice
     var inimathot = 4;//hotsim dice
     
-    var dataP=0;
-    
+    var dataP=0;//data processing, for TM's
     
     var bodmin=1;//minimum attrabute
     var agimin=1;
@@ -1826,6 +1823,8 @@ p, td {
         Lonestarremotecommander:{model: "Lone Star Remote Commander", type: "rcc", device: 6, dataprocess: 6, firewall: 5, avail: 14, restrict: "Restricted", cost: 75000},
         Mctdroneweb: {model: "MCT Drone Web", type: "rcc", device: 6, dataprocess: 7, firewall: 6, avail: 16, restrict: "Restricted", cost: 95000},
         Trioxubermensch: {model: "Triox UberMensch", type: "rcc", device: 6, dataprocess: 8, firewall: 7, avail: 18, restrict: "Restricted", cost: 140000},
+        //accessories
+        argloves: {name:"AR Gloves", type:"accessory", device:3, avail:0, cost:150},
     }
     
     var software = {
@@ -2485,6 +2484,11 @@ p, td {
                             knowledgepoints++;
                         }
                         x[skill]["rating"]--;
+                    }
+                }
+                else if ( (x[skill]["rating"]==0) && (x==knowledgeSkills) ) { // Removes knowledge skill if at zero and reduced again.
+                    if (className=="decAtt "+[skill]) {
+                        $('.'+[skill]).remove(); // Technically removes table row. Does not delete array entry to avoid index problems.
                     }
                 }
             }
